@@ -1,9 +1,9 @@
-function notify(element) {
-  resetElements();
+function changeColor(element) {
+  removeElements();
   element.classList.add("active");
 }
 
-function resetElements() {
+function removeElements() {
   let element = document.getElementsByClassName("active");
 
   for (let i = 0; i < element.length; i++) {
